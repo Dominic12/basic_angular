@@ -13,6 +13,7 @@ import {MatTableModule} from '@angular/material/table';
 import { UserComponent } from './components/users/user/user.component';
 import {SafePipe} from './pipes/safe.pipe';
 import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {MatButtonModule} from '@angular/material/button';
     HttpClientModule,
     MatTableModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

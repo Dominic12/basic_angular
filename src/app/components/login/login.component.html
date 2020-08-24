@@ -2,7 +2,7 @@
 <form [formGroup]="loginForm" (ngSubmit)="login()">
   <div>
     <label for="email">Email</label>
-    <input type="text" formControlName="email"
+    <input matInput type="text" formControlName="email"
            [ngClass]="{ 'is-invalid': submitted && form.username.errors }"/>
     <div *ngIf="submitted && form.username.errors">
       <div *ngIf="form.username.errors.required">Username is required</div>
@@ -10,14 +10,14 @@
   </div>
   <div>
     <label for="password">Password</label>
-    <input type="password" formControlName="password"
+    <input matInput type="password" formControlName="password"
            [ngClass]="{ 'is-invalid': submitted && form.password.errors }"/>
   </div>
   <div>
-    <button>
+    <button mat-button>
       <span></span>
       Login
     </button>
-    <a routerLink="/register" >Register</a>
+    <a mat-button routerLink="/register" >Register</a>
   </div>
 </form>
