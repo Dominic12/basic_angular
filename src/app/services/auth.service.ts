@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {TokenResult} from '../interfaces/tokenresult';
+import {TokenResult} from '../interfaces/token-result';
 import {environment} from '../../environments/environment';
 
 @Injectable({
