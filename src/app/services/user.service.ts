@@ -23,6 +23,8 @@ export class UserService {
   public getUsersWithPagination(pageNumber: number): Observable<ListResponse>{
     return this.httpClient.get<ListResponse>(environment.backend_url + 'users?page=' + pageNumber);
   }
+
+  /// TODO: Crud
 }
 
 
