@@ -26,4 +26,8 @@ export class AuthService {
       password,
     });
   }
+
+  public get isAuthenticated(): boolean {
+    return true; /// TODO: Implement
+  }
 }
