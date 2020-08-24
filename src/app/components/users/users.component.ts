@@ -12,7 +12,7 @@ export class UsersComponent implements OnInit {
   constructor(private userService: UserService) {
   }
 
-  displayedColumns: string[] = ['email', 'first_name', 'last_name'];
+  displayedColumns: string[] = ['first_name', 'email', 'last_name'];
   public users: User[];
 
   ngOnInit(): void {
