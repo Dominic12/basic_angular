@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "wissenstransfer"
+    }
+  },
+  "defaultProject": "wissenstransfer",
+  "cli": {
+    "analytics": "799bc78f-82f0-411c-8b45-6ab0132f4583"
+  }
 }
