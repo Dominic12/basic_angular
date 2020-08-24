@@ -2,16 +2,11 @@
 <form [formGroup]="loginForm" (ngSubmit)="login()">
   <div>
     <label for="email">Email</label>
-    <input matInput type="text" formControlName="email"
-           [ngClass]="{ 'is-invalid': submitted && form.username.errors }"/>
-    <div *ngIf="submitted && form.username.errors">
-      <div *ngIf="form.username.errors.required">Username is required</div>
-    </div>
+    <input matInput type="text" formControlName="email"/>
   </div>
   <div>
     <label for="password">Password</label>
-    <input matInput type="password" formControlName="password"
-           [ngClass]="{ 'is-invalid': submitted && form.password.errors }"/>
+    <input matInput type="password" formControlName="password"/>
   </div>
   <div>
     <button mat-button>
