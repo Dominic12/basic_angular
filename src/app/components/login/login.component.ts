@@ -9,10 +9,6 @@ import {AuthService} from '../../services/auth.service';
 })
 export class LoginComponent implements OnInit {
 
-
-  public submitted = false;
-
-
   public loginForm: FormGroup;
 
   constructor(private formBuilder: FormBuilder, private authService: AuthService) {
@@ -37,7 +33,7 @@ export class LoginComponent implements OnInit {
     }
 
     this.authService.login(this.form.email.value, this.form.password.value).subscribe(val => {
-      console.log(val);
+      localStorage.setItem('email', this.form.email);
     });
 
 

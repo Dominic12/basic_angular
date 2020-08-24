@@ -1,4 +1,4 @@
-<h1>Hello, User</h1> <!-- TODO: Set Name of registered user. Hint: Interpolations -->
+<h1>Hello, {{email}}</h1> <!-- TODO: Set Name of registered user. Hint: Interpolations -->
 
 
 <mat-table [dataSource]="users" class="mat-elevation-z8">
@@ -28,3 +28,5 @@
   <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
   <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
 </mat-table>
+
+<app-user [user]="users[0]"></app-user>

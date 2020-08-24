@@ -1,4 +1,4 @@
-<img [src]="this.user?.avatar"> <!-- TODO: Oops, somebody forgot to add that one :( Let's add it! BTW: As since this is an url, Angulars own XSS Protection kicks in. Maybe a pipe could be helpful? -->
+<img [src]="this.user?.avatar | safe: 'url'" >
 
 <p>First Name: {{this.user.first_name}}</p>
 <p>Last Name: {{this.user.last_name}}</p>

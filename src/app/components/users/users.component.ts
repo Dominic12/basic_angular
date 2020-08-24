@@ -14,11 +14,13 @@ export class UsersComponent implements OnInit {
 
   displayedColumns: string[] = ['first_name', 'email', 'last_name'];
   public users: User[];
+  public email: string;
 
   ngOnInit(): void {
     this.userService.getUsers().subscribe(val => {
       this.users = val.data;
     });
+    this.email = this.userService.getEmail();
   }
 
 }
